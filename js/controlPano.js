@@ -3,7 +3,6 @@ const Panorama2 = new PANOLENS.ImagePanorama('assets/Panorama_2.jpg');
 const Panorama3 = new PANOLENS.ImagePanorama('assets/Panorama_3.jpg');
 const Panorama4 = new PANOLENS.ImagePanorama('assets/Panorama_4.jpg');
 const Panorama5 = new PANOLENS.ImagePanorama('assets/Panorama_5.jpg');
-const Panorama6 = new PANOLENS.ImagePanorama('assets/Panorama_6.jpg');
 let imageContainer = document.querySelector('.panorama__container');
 
 let SpotPositions = [
@@ -38,23 +37,23 @@ const viewer = new PANOLENS.Viewer({
 Panorama1.link(Panorama2, SpotPositions[0]);
 Panorama2.link(Panorama1, SpotPositions[1]);
 
-// Связь коридора_2 и комнаты переговоров_1
-Panorama2.link(Panorama3, SpotPositions[2]);
+// // Связь коридора_2 и комнаты переговоров_1
+// Panorama2.link(Panorama3, SpotPositions[2]);
 
 // Связь коридора_1 и комнаты переговоров_1
-Panorama1.link(Panorama3, SpotPositions[3]);
-Panorama3.link(Panorama1, SpotPositions[4]);
+Panorama2.link(Panorama3, SpotPositions[2]);
+Panorama3.link(Panorama2, SpotPositions[3]);
 
 // Связь переговорной_1 и переговорной_2
-Panorama3.link(Panorama4, SpotPositions[5]);
-Panorama4.link(Panorama3, SpotPositions[6]);
+Panorama2.link(Panorama4, SpotPositions[4]);
+Panorama4.link(Panorama2, SpotPositions[5]);
 
 // Связь коридора_1 и гостинной_1
-Panorama1.link(Panorama5, SpotPositions[7]);
-Panorama5.link(Panorama1, SpotPositions[8]);
+Panorama4.link(Panorama5, SpotPositions[6]);
+Panorama5.link(Panorama4, SpotPositions[7]);
 
-// Связь гостинной_1 и гостинной_2
-Panorama5.link(Panorama6, SpotPositions[9]);
-Panorama6.link(Panorama5, SpotPositions[10]);
+// // Связь гостинной_1 и гостинной_2
+// Panorama5.link(Panorama6, SpotPositions[8]);
+// Panorama6.link(Panorama5, SpotPositions[9]);
 
-viewer.add(Panorama1, Panorama2, Panorama3, Panorama4, Panorama5, Panorama6);
+viewer.add(Panorama1, Panorama2, Panorama3, Panorama4, Panorama5);
