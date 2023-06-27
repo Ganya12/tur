@@ -10,7 +10,7 @@ let SpotPositions = [
     new THREE.Vector3(0, 0, 1500),
     new THREE.Vector3(1630, 0, -660),
     // Связь коридора_2 и комнаты переговоров
-    new THREE.Vector3(1860, 0, 620),
+    // new THREE.Vector3(1860, 0, 620),
     // Связь коридора_1 и комнаты переговоров
     new THREE.Vector3(1600, 0, 400),
     new THREE.Vector3(-1800, 0, 400),
@@ -21,8 +21,8 @@ let SpotPositions = [
     new THREE.Vector3(-800, 0, -2400),
     new THREE.Vector3(0, 0, 2300),
     // Связь гостинной
-    new THREE.Vector3(800, 0, 0),
-    new THREE.Vector3(-800, 0, 0),
+    // new THREE.Vector3(800, 0, 0),
+    // new THREE.Vector3(-800, 0, 0),
 ]
 
 const viewer = new PANOLENS.Viewer({
