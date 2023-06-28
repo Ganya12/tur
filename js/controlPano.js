@@ -10,14 +10,14 @@ let SpotPositions = [
     new THREE.Vector3(1500, 0, 1500),
     new THREE.Vector3(0, 0, 1500),
     // Связь зал и кухня
-    new THREE.Vector3(1600, 0, 400),
-    new THREE.Vector3(-1800, 0, 400),
+    new THREE.Vector3(3000, 0, 1500),
+    new THREE.Vector3(1100, 0, 1500),
     // Связь зал и спальня
-    new THREE.Vector3(1600, 0, 0),
-    new THREE.Vector3(1800, 0, 0),
+    new THREE.Vector3(680, 0, 1500),
+    new THREE.Vector3(670, 0, 1500),
     // Связь спальня и ванная
-    new THREE.Vector3(-800, 0, -2400),
-    new THREE.Vector3(0, 0, 2300),
+    new THREE.Vector3(1070, 0, 1500),
+    new THREE.Vector3(1900, 0, 1500),
 ]
 
 const viewer = new PANOLENS.Viewer({
