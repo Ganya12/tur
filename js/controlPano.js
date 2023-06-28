@@ -8,13 +8,13 @@ let imageContainer = document.querySelector('.panorama__container');
 let SpotPositions = [
     // Связь коридор и зал
     new THREE.Vector3(1900, 0, 1500),
-    new THREE.Vector3(-3500, 0, 1500),
+    new THREE.Vector3(-2000, 0, 1500),
     // Связь зал и кухня
     new THREE.Vector3(50, 0, -1500),
     new THREE.Vector3(1100, 0, 1500),
     // Связь зал и спальня
     new THREE.Vector3(20, 0, 1500),
-    new THREE.Vector3(-1000, 0, 1500),
+    new THREE.Vector3(-3000, 0, 1500),
     // Связь спальня и ванная
     new THREE.Vector3(670, 0, 1500),
     new THREE.Vector3(1900, 0, 1500),
@@ -24,7 +24,7 @@ const viewer = new PANOLENS.Viewer({
     container: imageContainer,
     controlBar: true,
     autoRotate: true,
-    autoRotateSpeed: 0.4,
+    autoRotateSpeed: 0.3,
     cameraFov: 100
 });
 
