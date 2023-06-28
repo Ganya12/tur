@@ -14,7 +14,7 @@ let SpotPositions = [
     new THREE.Vector3(1100, 0, 1500),
     // Связь зал и спальня
     new THREE.Vector3(20, 0, 1500),
-    new THREE.Vector3(-3000, 0, 1500),
+    new THREE.Vector3(-1000, 0, 1500),
     // Связь спальня и ванная
     new THREE.Vector3(670, 0, 1500),
     new THREE.Vector3(1900, 0, 1500),
